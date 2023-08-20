@@ -73,6 +73,8 @@ namespace ZetaPotential
             this.panelControl = new System.Windows.Forms.Panel();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.panel7 = new System.Windows.Forms.Panel();
+            this.textBoxSampleName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -102,7 +104,7 @@ namespace ZetaPotential
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.PHValue);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(33, 4);
+            this.panel1.Location = new System.Drawing.Point(33, 65);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(253, 125);
             this.panel1.TabIndex = 1;
@@ -124,7 +126,7 @@ namespace ZetaPotential
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel2.Controls.Add(this.ColorValue);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(347, 4);
+            this.panel2.Location = new System.Drawing.Point(347, 65);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(253, 125);
             this.panel2.TabIndex = 3;
@@ -158,7 +160,7 @@ namespace ZetaPotential
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.TemperatureValue);
             this.panel3.Controls.Add(this.TemperatureLabel);
-            this.panel3.Location = new System.Drawing.Point(662, 4);
+            this.panel3.Location = new System.Drawing.Point(662, 65);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(253, 125);
             this.panel3.TabIndex = 4;
@@ -203,7 +205,7 @@ namespace ZetaPotential
             this.panel4.Controls.Add(this.ZetaValue);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.label11);
-            this.panel4.Location = new System.Drawing.Point(662, 148);
+            this.panel4.Location = new System.Drawing.Point(662, 209);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(253, 125);
             this.panel4.TabIndex = 7;
@@ -250,7 +252,7 @@ namespace ZetaPotential
             this.panel5.Controls.Add(this.label12);
             this.panel5.Controls.Add(this.ConductivityValue);
             this.panel5.Controls.Add(this.label14);
-            this.panel5.Location = new System.Drawing.Point(347, 148);
+            this.panel5.Location = new System.Drawing.Point(347, 209);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(253, 125);
             this.panel5.TabIndex = 6;
@@ -295,7 +297,7 @@ namespace ZetaPotential
             this.panel6.Controls.Add(this.label15);
             this.panel6.Controls.Add(this.TurbidityValue);
             this.panel6.Controls.Add(this.label17);
-            this.panel6.Location = new System.Drawing.Point(33, 148);
+            this.panel6.Location = new System.Drawing.Point(33, 209);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(253, 125);
             this.panel6.TabIndex = 5;
@@ -342,7 +344,7 @@ namespace ZetaPotential
             this.panelConnection.Controls.Add(this.comboBoxPortList);
             this.panelConnection.Controls.Add(this.buttonDisconnect);
             this.panelConnection.Controls.Add(this.buttonConnect);
-            this.panelConnection.Location = new System.Drawing.Point(12, 300);
+            this.panelConnection.Location = new System.Drawing.Point(12, 359);
             this.panelConnection.Name = "panelConnection";
             this.panelConnection.Size = new System.Drawing.Size(211, 106);
             this.panelConnection.TabIndex = 4;
@@ -436,7 +438,7 @@ namespace ZetaPotential
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dataGridView1.Location = new System.Drawing.Point(229, 300);
+            this.dataGridView1.Location = new System.Drawing.Point(229, 359);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(729, 150);
@@ -546,7 +548,7 @@ namespace ZetaPotential
             this.panelControl.Controls.Add(this.buttonSave);
             this.panelControl.Controls.Add(this.buttonClear);
             this.panelControl.Enabled = false;
-            this.panelControl.Location = new System.Drawing.Point(229, 456);
+            this.panelControl.Location = new System.Drawing.Point(229, 515);
             this.panelControl.Name = "panelControl";
             this.panelControl.Size = new System.Drawing.Size(729, 42);
             this.panelControl.TabIndex = 13;
@@ -560,7 +562,9 @@ namespace ZetaPotential
             this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel7.Controls.Add(this.textBoxSampleName);
             this.panel7.Controls.Add(this.panel1);
+            this.panel7.Controls.Add(this.label4);
             this.panel7.Controls.Add(this.panel6);
             this.panel7.Controls.Add(this.panel2);
             this.panel7.Controls.Add(this.panel4);
@@ -568,15 +572,38 @@ namespace ZetaPotential
             this.panel7.Controls.Add(this.panel3);
             this.panel7.Location = new System.Drawing.Point(12, 8);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(946, 286);
+            this.panel7.Size = new System.Drawing.Size(946, 345);
             this.panel7.TabIndex = 14;
+            // 
+            // textBoxSampleName
+            // 
+            this.textBoxSampleName.BackColor = System.Drawing.Color.DarkCyan;
+            this.textBoxSampleName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSampleName.ForeColor = System.Drawing.Color.Cornsilk;
+            this.textBoxSampleName.Location = new System.Drawing.Point(218, 13);
+            this.textBoxSampleName.Name = "textBoxSampleName";
+            this.textBoxSampleName.Size = new System.Drawing.Size(166, 38);
+            this.textBoxSampleName.TabIndex = 5;
+            this.textBoxSampleName.Text = "Sample 1";
+            this.textBoxSampleName.Click += new System.EventHandler(this.textBoxSampleName_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Cornsilk;
+            this.label4.Location = new System.Drawing.Point(29, 14);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(184, 31);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Sample Name";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
-            this.ClientSize = new System.Drawing.Size(978, 508);
+            this.ClientSize = new System.Drawing.Size(978, 567);
             this.Controls.Add(this.panelControl);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panelConnection);
@@ -603,6 +630,7 @@ namespace ZetaPotential
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panelControl.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -652,6 +680,8 @@ namespace ZetaPotential
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.TextBox textBoxSampleName;
+        private System.Windows.Forms.Label label4;
     }
 }
 

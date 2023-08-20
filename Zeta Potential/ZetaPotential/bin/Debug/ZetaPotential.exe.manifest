@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ZetaPotential.exe" size="27120">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ZetaPotential.exe" size="28144">
       <assemblyIdentity name="ZetaPotential" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>3DKWET5dbZRtB13lGlnpS8R6/0hevlI5zyAPPNO1rz0=</dsig:DigestValue>
+        <dsig:DigestValue>IhPOZia4D/YUz/j+IjSKJzKLmdleJg2Th586Ug5sE/k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

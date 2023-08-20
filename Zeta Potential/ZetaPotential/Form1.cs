@@ -34,8 +34,8 @@ namespace ZetaPotential
             {
                 comboBoxPortList.Text = Convert.ToString(comboBoxPortList.Items[0]);
             }
-            dataGridView1.ColumnCount = 7;
-            string[] row = new string[] { "Time", "pH", "Color (RGB)", "Conductivity (uS/cm)", "Temperature (°C)", "Turbidity (NTU) ", "Zeta Potential (mv)" };
+            dataGridView1.ColumnCount = 8;
+            string[] row = new string[] { "Time","Sample Name", "pH", "Color (RGB)", "Conductivity (uS/cm)", "Temperature (°C)", "Turbidity (NTU) ", "Zeta Potential (mv)" };
             dataGridView1.Rows.Insert(0, row);
             buttonConnect.Enabled = true;
             buttonDisconnect.Enabled = false;
@@ -111,7 +111,7 @@ namespace ZetaPotential
         {
             string date = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm");
 
-            string[] row = new string[] { date, PHValue.Text, ColorValue.Text, ConductivityValue.Text, TemperatureValue.Text, TurbidityValue.Text, ZetaValue.Text };
+            string[] row = new string[] { date,textBoxSampleName.Text, PHValue.Text, ColorValue.Text, ConductivityValue.Text, TemperatureValue.Text, TurbidityValue.Text, ZetaValue.Text };
             dataGridView1.Rows.Insert(1, row);
             //dataGridView1.Rows.Add(date, label_PH.Text, label_Color.Text, label_conductivity.Text, label_temperature.Text, label_turbidity.Text, textboxZetaValue.Text);
 
@@ -169,6 +169,11 @@ namespace ZetaPotential
             {
                 e.Handled = true;
             }
+        }
+
+        private void textBoxSampleName_Click(object sender, EventArgs e)
+        {
+            textBoxSampleName.Text = "";
         }
     }
 }
