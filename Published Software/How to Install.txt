@@ -1,0 +1,2 @@
+Install "CH340 Driver"
+Install "setup.exe"
