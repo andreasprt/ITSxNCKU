@@ -147,10 +147,16 @@ namespace ZetaPotential
 
 
                 PHValue.Text = inidata1;
-                ColorValue.Text = inidata2;
+
+                
                 TemperatureValue.Text = inidata3;
                 ConductivityValue.Text = inidata4;
                 TurbidityValue.Text = inidata5;
+
+                if (checkBoxUpdateColor.Checked)
+                {
+                    ColorValue.Text = inidata2;
+                }
                 dtMasuk = "";
             }
 

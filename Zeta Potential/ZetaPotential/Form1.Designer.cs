@@ -75,6 +75,7 @@ namespace ZetaPotential
             this.panel7 = new System.Windows.Forms.Panel();
             this.textBoxSampleName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.checkBoxUpdateColor = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -562,6 +563,7 @@ namespace ZetaPotential
             this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel7.Controls.Add(this.checkBoxUpdateColor);
             this.panel7.Controls.Add(this.textBoxSampleName);
             this.panel7.Controls.Add(this.panel1);
             this.panel7.Controls.Add(this.label4);
@@ -597,6 +599,19 @@ namespace ZetaPotential
             this.label4.Size = new System.Drawing.Size(184, 31);
             this.label4.TabIndex = 4;
             this.label4.Text = "Sample Name";
+            // 
+            // checkBoxUpdateColor
+            // 
+            this.checkBoxUpdateColor.AutoSize = true;
+            this.checkBoxUpdateColor.Checked = true;
+            this.checkBoxUpdateColor.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxUpdateColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxUpdateColor.Location = new System.Drawing.Point(419, 34);
+            this.checkBoxUpdateColor.Name = "checkBoxUpdateColor";
+            this.checkBoxUpdateColor.Size = new System.Drawing.Size(134, 24);
+            this.checkBoxUpdateColor.TabIndex = 15;
+            this.checkBoxUpdateColor.Text = "Update Color";
+            this.checkBoxUpdateColor.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -682,6 +697,7 @@ namespace ZetaPotential
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.TextBox textBoxSampleName;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox checkBoxUpdateColor;
     }
 }
 
